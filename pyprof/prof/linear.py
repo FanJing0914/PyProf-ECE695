@@ -37,7 +37,7 @@ class Linear(OperatorLayerBase):
     biasKernels = [
         "kernelReduceContigDim", "kernelReduceNoncontigDim_shared",
         "elementwise_kernel", "reduce_kernel", "kernelPointwiseApply2",
-        "2d_grouped_direct_kernel"
+        "2d_grouped_direct_kernel", "enable_if", "cublasLt::epilogue::impl::globalKernel"
     ]
 
     def setXWBMNK(self, args):
